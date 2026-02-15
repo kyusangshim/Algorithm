@@ -29,13 +29,10 @@ class Solution {
                 }
                 else {
                     priorities[idx] = 0;
-                    idx = findIdx(n, idx);
                     maxVal = findMax(priorities);
                 }
-            } else {
-                idx = findIdx(n, idx);
-                continue;
-            }
+            } 
+            idx = findIdx(n, idx);
         }
         
     }
